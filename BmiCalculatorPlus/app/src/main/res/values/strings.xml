@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BmiCalculatorPlus</string>
+    <string name="bmi">BMI</string>
+    <string name="bmr">BMR</string>
+    <string name="recipes">Recipes</string>
+    <string name="weight_placeholder">Podaj wagę (kg)</string>
+    <string name="height_placeholder">Podaj wzrost (cm)</string>
+    <string name="bmi_button">Oblicz BMI</string>
+    <string name="draw_button">Wylosuj ponownie</string>
+    <string name="calories_benedict_harris_button">Oblicz zapotrzebowanie kaloryczne</string>
+    <string name="age_placeholder">Podaj wiek</string>
+    <string name="bmi_underweight">Niedowaga</string>
+    <string name="bmi_optimum">Optimum</string>
+    <string name="bmi_overweight">Nadwaga</string>
+    <string name="bmi_obese">Otyłość</string>
+    <string name="bmi_bmr_invalid_input">Wprowadź poprawne wartości!</string>
+    <string name="bmi_result_format">BMI: %.2f - %s</string>
+    <string name="bmr_result">Zapotrzebowanie kaloryczne: %.2f</string>
+    <string name="bmr_input_error">Wprowadź wszystkie dane.</string>
+    <string name="bmr_parse_error">Nieprawidłowe dane wejściowe.</string>
+</resources>
