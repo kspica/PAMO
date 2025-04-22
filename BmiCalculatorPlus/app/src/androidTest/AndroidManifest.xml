@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bmicalculatorplus.test">
+
+    <application>
+        <activity
+            android:name="androidx.fragment.app.testing.EmptyFragmentActivity"
+            android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme"
+            android:exported="true" />
+    </application>
+</manifest>

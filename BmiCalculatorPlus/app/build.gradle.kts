@@ -47,6 +47,19 @@ dependencies {
     implementation(libs.transition)
     implementation(libs.gson)
     testImplementation(libs.junit)
+    testImplementation(libs.core.testing)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.junit.jupiter)
+    testImplementation(libs.junit.jupiter.api)
+    testImplementation(libs.ext.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    debugImplementation("androidx.fragment:fragment-testing-manifest:1.6.2")
+    androidTestImplementation("androidx.fragment:fragment-testing:1.6.2")
+    testRuntimeOnly(libs.jupiter.junit.jupiter.engine)
+
+}
+
+tasks.withType<Test> {
+    useJUnit()
 }

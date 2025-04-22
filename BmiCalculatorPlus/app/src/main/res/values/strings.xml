@@ -15,7 +15,7 @@
     <string name="bmi_obese">Otyłość</string>
     <string name="bmi_bmr_invalid_input">Wprowadź poprawne wartości!</string>
     <string name="bmi_result_format">BMI: %.2f - %s</string>
-    <string name="bmr_result">Zapotrzebowanie kaloryczne: %.2f</string>
+    <string name="bmr_result">Zapotrzebowanie kaloryczne: %.2f kcal</string>
     <string name="bmr_input_error">Wprowadź wszystkie dane.</string>
     <string name="bmr_parse_error">Nieprawidłowe dane wejściowe.</string>
 </resources>

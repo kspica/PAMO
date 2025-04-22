@@ -17,8 +17,6 @@ import com.example.bmicalculatorplus.databinding.ActivityMainBinding;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
-
     /**
      * Metoda wywoływana podczas tworzenia aktywności.
      * Ustawia splash screen, ładuje layout oraz konfiguruje nawigację między fragmentami.
@@ -31,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+       ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
