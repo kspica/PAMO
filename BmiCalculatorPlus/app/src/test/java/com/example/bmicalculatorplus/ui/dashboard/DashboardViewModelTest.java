@@ -1,6 +1,8 @@
 package com.example.bmicalculatorplus.ui.dashboard;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule;
 
@@ -12,18 +14,27 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
+/**
+ * Testy jednostkowe dla {@link DashboardViewModel}.
+ */
 public class DashboardViewModelTest {
-
     @Rule
     public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
 
     private DashboardViewModel viewModel;
 
+    /**
+     * Metoda wywoływana przed każdym testem. Inicjalizuje instancję {@link DashboardViewModel}.
+     */
     @Before
     public void setUp() {
         viewModel = new DashboardViewModel();
     }
 
+    /**
+     * Testuje metodę {@link DashboardViewModel#calculateBMR(Gender, String, String, String)}
+     * dla mężczyzny, sprawdzając, czy zwracany wynik jest poprawny.
+     */
     @Test
     public void calculateBMR_shouldReturnCorrectMaleResult() {
         String weight = "70";
@@ -40,6 +51,10 @@ public class DashboardViewModelTest {
         assertEquals(expectedCalories, result.getCalories(), 0.01);
     }
 
+    /**
+     * Testuje metodę {@link DashboardViewModel#calculateBMR(Gender, String, String, String)}
+     * dla kobiety, sprawdzając, czy zwracany wynik jest poprawny.
+     */
     @Test
     public void calculateBMR_shouldReturnCorrectFemaleResult() {
         viewModel.calculateBMR(Gender.FEMALE, "60", "165", "30");
@@ -52,6 +67,12 @@ public class DashboardViewModelTest {
         assertEquals(expectedCalories, result.getCalories(), 0.01);
     }
 
+
+    /**
+     * Testuje metodę {@link DashboardViewModel#calculateBMR(Gender, String, String, String)}
+     * w przypadku podania pustej wartości dla jednego z pól, sprawdzając, czy zwracany jest
+     * status {@link BMRStatus#INVALID_INPUT}.
+     */
     @Test
     public void calculateBMR_shouldReturnInvalidInputForEmpty() {
         viewModel.calculateBMR(Gender.MALE, "", "175", "25");
@@ -62,6 +83,12 @@ public class DashboardViewModelTest {
         assertNull(result.getCalories());
     }
 
+
+    /**
+     * Testuje metodę {@link DashboardViewModel#calculateBMR(Gender, String, String, String)}
+     * w przypadku podania nienumerycznej wartości dla jednego z pól, sprawdzając, czy zwracany jest
+     * status {@link BMRStatus#PARSE_ERROR}.
+     */
     @Test
     public void calculateBMR_shouldReturnParseErrorForNonNumeric() {
         viewModel.calculateBMR(Gender.FEMALE, "abc", "170", "30");
