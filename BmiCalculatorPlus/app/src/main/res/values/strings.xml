@@ -2,7 +2,7 @@
     <string name="app_name">BmiCalculatorPlus</string>
     <string name="bmi">BMI</string>
     <string name="bmr">BMR</string>
-    <string name="recipes">Recipes</string>
+    <string name="recipes">Przepisy</string>
     <string name="weight_placeholder">Podaj wagę (kg)</string>
     <string name="height_placeholder">Podaj wzrost (cm)</string>
     <string name="bmi_button">Oblicz BMI</string>
@@ -18,4 +18,9 @@
     <string name="bmr_result">Zapotrzebowanie kaloryczne: %.2f kcal</string>
     <string name="bmr_input_error">Wprowadź wszystkie dane.</string>
     <string name="bmr_parse_error">Nieprawidłowe dane wejściowe.</string>
+    <string name="shopping">Lista zakupów</string>
+    <string name="bmichart">Wykres BMI</string>
+    <string name="ingredients">Składniki dla: ...</string>
+    <string name="product_name">Nazwa składnika</string>
+    <string name="ingredients_for">Składniki dla: %1$s</string>
 </resources>

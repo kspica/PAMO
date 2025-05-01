@@ -2,26 +2,31 @@
   {
     "title": "Pizza Margherita",
     "description": "1. Przygotuj ciasto z mąki, wody, drożdży i soli.\n2. Odstaw do wyrośnięcia na 1 godzinę.\n3. Rozwałkuj ciasto i posmaruj sosem pomidorowym.\n4. Dodaj plastry mozzarelli i liście bazylii.\n5. Piecz w temperaturze 220°C przez 12-15 minut.",
-    "imageName": "pizza"
+    "imageName": "pizza",
+    "ingredients": ["mąka", "woda", "drożdże", "sól", "sos pomidorowy", "mozzarella", "bazylia"]
   },
   {
     "title": "Zupa dyniowa",
     "description": "1. Obierz i pokrój dynię w kostkę.\n2. Podsmaż cebulę i czosnek na maśle.\n3. Dodaj dynię, zalej bulionem warzywnym i gotuj 20 minut.\n4. Zmiksuj wszystko blenderem na krem.\n5. Dopraw solą, pieprzem i imbirem. Podawaj z grzankami.",
-    "imageName": "soup"
+    "imageName": "soup",
+    "ingredients": ["dynia", "cebula", "czosnek", "masło", "bulion warzywny", "sól", "pieprz", "imbir", "grzanki"]
   },
   {
     "title": "Spaghetti Carbonara",
     "description": "1. Ugotuj makaron spaghetti al dente.\n2. Podsmaż boczek na patelni.\n3. W misce wymieszaj jajka, starty parmezan i pieprz.\n4. Połącz ugotowany makaron z boczkiem, zdejmij z ognia.\n5. Wlej mieszankę jajeczną i wymieszaj energicznie.",
-    "imageName": "carbonara"
+    "imageName": "carbonara",
+    "ingredients": ["makaron spaghetti", "boczek", "jajka", "parmezan", "pieprz"]
   },
   {
     "title": "Kurczak curry",
     "description": "1. Pokrój pierś z kurczaka w kostkę.\n2. Podsmaż cebulę i czosnek na oleju.\n3. Dodaj pastę curry i smaż chwilę.\n4. Dodaj kurczaka, a po chwili mleko kokosowe.\n5. Gotuj 15 minut, podawaj z ryżem i świeżą kolendrą.",
-    "imageName": "curry"
+    "imageName": "curry",
+    "ingredients": ["pierś z kurczaka", "cebula", "czosnek", "olej", "pasta curry", "mleko kokosowe", "ryż", "kolendra"]
   },
   {
     "title": "Sałatka grecka",
     "description": "1. Pokrój ogórka, pomidora, paprykę i czerwoną cebulę.\n2. Wrzuć wszystko do miski i dodaj oliwki.\n3. Pokrój fetę w kostkę i dodaj do warzyw.\n4. Skrop oliwą z oliwek i posyp oregano.\n5. Delikatnie wymieszaj i podawaj schłodzoną.",
-    "imageName": "salad"
+    "imageName": "salad",
+    "ingredients": ["ogórek", "pomidor", "papryka", "czerwona cebula", "oliwki", "ser feta", "oliwa z oliwek", "oregano"]
   }
 ]

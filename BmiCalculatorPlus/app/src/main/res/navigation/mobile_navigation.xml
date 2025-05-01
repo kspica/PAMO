@@ -22,4 +22,16 @@
         android:name="com.example.bmicalculatorplus.ui.notifications.NotificationsFragment"
         android:label="@string/recipes"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_shopping"
+        android:name="com.example.bmicalculatorplus.ui.shopping.ShoppingListFragment"
+        android:label="@string/shopping"
+        tools:layout="@layout/fragment_shopping_list" />
+
+    <fragment
+        android:id="@+id/navigation_bmi_chart"
+        android:name="com.example.bmicalculatorplus.ui.bmichart.BMIChartFragment"
+        android:label="Wykres BMI"
+        tools:layout="@layout/fragment_bmi_chart" />
 </navigation>

@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.example.bmicalculatorplus.ui.model.Recipe;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
@@ -24,7 +25,6 @@ public class RecipeRepository {
 
     private static final String RECIPES_FILE_NAME = "recipes.json";
     private static final String TAG = RecipeRepository.class.getSimpleName();
-    private final Gson gson = new Gson();
 
     /**
      * Ładuje listę przepisów z pliku JSON znajdującego się w folderze assets.
@@ -43,7 +43,11 @@ public class RecipeRepository {
 
             String recipes = reader.lines().collect(Collectors.joining());
 
+            Gson gson = new GsonBuilder()
+                    .registerTypeAdapter(Recipe.class, new RecipeDeserializer())
+                    .create();
             Type listType = new TypeToken<List<Recipe>>() {}.getType();
+            
             return gson.fromJson(recipes, listType);
 
         } catch (IOException e) {
