@@ -8,3 +8,6 @@ zad3 - autor Karol Spica:
  * https://github.com/kspica/PAMO/tree/main/BmiCalculatorPlus/app/src/androidTest/java/com/example/bmicalculatorplus/ui/dashboard/DashboardFragmentTest.java - klasa z testami Espresso
  * https://github.com/kspica/PAMO/tree/main/Testy/monkey.png - zrzut z testu przy użyciu narzędzia Monkey
 
+zad4 - autor Karol Spica:
+ * https://github.com/kspica/PAMO/tree/main/KotlinExercise - rozwiązania 12 zadań
+ * https://github.com/kspica/PAMO/tree/main/BmiCalculatorPlus - rozbudowana apikacja

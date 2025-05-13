@@ -46,8 +46,9 @@ public class RecipeRepository {
             Gson gson = new GsonBuilder()
                     .registerTypeAdapter(Recipe.class, new RecipeDeserializer())
                     .create();
-            Type listType = new TypeToken<List<Recipe>>() {}.getType();
-            
+            Type listType = new TypeToken<List<Recipe>>() {
+            }.getType();
+
             return gson.fromJson(recipes, listType);
 
         } catch (IOException e) {

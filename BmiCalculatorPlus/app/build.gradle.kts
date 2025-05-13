@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -29,6 +30,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
     buildFeatures {
         viewBinding = true
     }
@@ -46,6 +50,7 @@ dependencies {
     implementation(libs.core.splashscreen)
     implementation(libs.transition)
     implementation(libs.gson)
+    implementation(libs.core.ktx)
     testImplementation(libs.junit)
     testImplementation(libs.core.testing)
     testImplementation(libs.mockito.core)
